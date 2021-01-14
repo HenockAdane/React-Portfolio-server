@@ -28,6 +28,8 @@ const ContactForm = require("./ContactForm")
 
 ContactForm(app)
 
+app.get("/", (req,res)=> res.send({message: "hello world from Henock Adane"}))
+
 
 
 app.listen(process.env.PORT || port, ()=> console.log(`listening to port ${port}`));

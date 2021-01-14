@@ -23,7 +23,7 @@ const SendMail = (res, subject, recievers, html) => {
           console.log("Message sent: %s", dataa.messageId);
       }).catch(err => {
         console.log(err)
-        res.status(404)
+        res.status(500).send()
       })
 }
 
